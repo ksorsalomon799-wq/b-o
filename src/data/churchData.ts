@@ -28,7 +28,7 @@ export type MediaItem = {
   id: string;
   title: string;
   type: 'image' | 'video';
-  category: 'Lễ Giáng Sinh' | 'Sinh hoạt Thanh niên' | 'Công tác Xã hội' | 'Bài giảng' | 'Nhóm lễ';
+ category: 'Lễ Giáng Sinh' | 'Sinh hoạt Thanh niên' | 'Sinh hoạt Ban Thanh niên' | 'Công tác Xã hội' | 'Bài giảng' | 'Nhóm lễ';
   image: string;
   videoUrl?: string;
   speaker?: string;
