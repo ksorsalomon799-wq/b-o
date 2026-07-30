@@ -16,8 +16,14 @@ export function HomePage() {
               Chúng ta cùng nhau bước đi trong niềm tin, bình an và lòng thương, đón nhận một tuần mới với hy vọng.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="/events" className="rounded-full bg-white px-5 py-3 font-semibold text-slate-900">Xem Lịch Nhóm</a>
-              <a href="#contact" className="rounded-full border border-white/40 px-5 py-3 font-semibold text-white">Gửi Lời Cầu Nguyện</a>
+              {/* Đã sửa thẻ đóng thành </Link> */}
+              <Link to="/events" className="rounded-full bg-white px-5 py-3 font-semibold text-slate-900">
+                Xem Lịch Nhóm
+              </Link>
+              {/* Chuyển sang thẻ <a> cho anchor link scroll nội bộ */}
+              <a href="#contact" className="rounded-full border border-white/40 px-5 py-3 font-semibold text-white">
+                Gửi Lời Cầu Nguyện
+              </a>
             </div>
           </div>
           <div className="relative min-h-[360px]">
@@ -82,7 +88,10 @@ export function HomePage() {
         <div>
           <div className="mb-4 flex items-center justify-between">
             <h3 className="font-serif text-2xl font-semibold text-slate-900">Tin tức & thông báo</h3>
-            <a href="/news" className="text-sm font-semibold text-red-800">Xem thêm</a>
+            {/* Đã sửa thẻ đóng thành </Link> */}
+            <Link to="/news" className="text-sm font-semibold text-red-800">
+              Xem thêm
+            </Link>
           </div>
           <div className="grid gap-4 md:grid-cols-3">
             {articles.map((article) => (
@@ -104,7 +113,10 @@ export function HomePage() {
         <div className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm">
           <div className="flex items-center justify-between">
             <h3 className="font-serif text-xl font-semibold text-slate-900">Thư viện nổi bật</h3>
-            <a href="/media" className="text-sm font-semibold text-red-800">Xem tất cả</a>
+            {/* Đã sửa thẻ đóng thành </Link> */}
+            <Link to="/media" className="text-sm font-semibold text-red-800">
+              Xem tất cả
+            </Link>
           </div>
           <div className="mt-4 space-y-3">
             {mediaItems.slice(0, 3).map((item) => (
@@ -124,4 +136,3 @@ export function HomePage() {
     </main>
   );
 }
-

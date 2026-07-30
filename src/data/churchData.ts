@@ -28,7 +28,7 @@ export type MediaItem = {
   id: string;
   title: string;
   type: 'image' | 'video';
- category: 'Lễ Giáng Sinh' | 'Sinh hoạt Thanh niên' | 'Sinh hoạt Ban Thanh niên' | 'Công tác Xã hội' | 'Bài giảng' | 'Nhóm lễ';
+  category: 'Lễ Giáng Sinh' | 'Sinh hoạt Thanh niên' | 'Công tác Xã hội' | 'Bài giảng' | 'Nhóm lễ';
   image: string;
   videoUrl?: string;
   speaker?: string;
@@ -54,11 +54,9 @@ export const articles: Article[] = [
   {
     id: '1',
     title: 'Thông báo chuẩn bị học lớp thánh kinh căn bản tại plei breng,Năm thứ 2',
-    image:'anhnen.jpg',
     excerpt: 'ngày 3/8 đến 14/8.',
     content: [
       'sẽ học trong tuần tới',
-      
     ],
     category: 'Thông báo',
     author: '',
@@ -85,7 +83,7 @@ export const articles: Article[] = [
     title: 'Đang tải...',
     excerpt: 'Đang tải...',
     content: ['Đang tải...'],
-    category: 'Đang tải...',
+    category: 'Bài giảng', // Đã sửa từ 'Đang tải...' thành 'Bài giảng'
     author: 'Đang tải...',
     date: 'Đang tải...',
     image: 'banhat.jpg',
@@ -97,36 +95,36 @@ export const articles: Article[] = [
 export const events: EventItem[] = [
   {
     id: 'e1',
-    title: 'Lễ phục sinh đặc biệt',
-    date: '2026-04-05',
-    time: '08:00',
-    location: 'Nhà thờ Plei Bui',
-    description: 'Buổi lễ phục sinh với bài giảng về hy vọng và sự sống mới.',
-    speaker: 'Mục sư An Phúc',
-    image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80',
-    category: 'Lễ',
+    title: 'Đang tải...',
+    date: 'Đang tải...',
+    time: 'Đang tải...',
+    location: 'Đang tải...i',
+    description: 'Đang tải...',
+    speaker: 'Đang tải...',
+    image: 'Đang tải...',
+    category: 'Đang tải...',
   },
   {
     id: 'e2',
-    title: 'Trại hè thiếu niên',
-    date: '2026-06-15',
-    time: '09:00',
-    location: 'Khu nghỉ dưỡng Trung tâm',
-    description: 'Ba ngày học Kinh Thánh, cầu nguyện và vui chơi cùng nhau.',
-    speaker: 'Ban thanh niên',
-    image: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80',
-    category: 'Trại hè',
+    title: 'Đang tải...',
+    date: 'Đang tải...',
+    time: 'Đang tải...',
+    location: 'Đang tải...',
+    description: 'Đang tải...',
+    speaker: 'Đang tải...',
+    image: 'Đang tải...',
+    category: 'Đang tải...',
   },
   {
     id: 'e3',
-    title: 'Ngày vì người nghèo',
-    date: '2026-08-20',
-    time: '07:30',
-    location: 'Bến xe trung tâm',
-    description: 'Buổi phát quà và cầu nguyện cho các gia đình cần sự hỗ trợ.',
-    speaker: 'Đội truyền giáo',
-    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80',
-    category: 'Công tác',
+    title: 'Đang tải...',
+    date: 'Đang tải...',
+    time: 'Đang tải...',
+    location: 'Đang tải...',
+    description: 'Đang tải...',
+    speaker: 'Đang tải...',
+    image: 'Đang tải...',
+    category: 'Đang tải...',
   },
 ];
 
@@ -141,20 +139,21 @@ export const mediaItems: MediaItem[] = [
   },
   {
     id: 'm2',
-    title: 'Bài giảng về hy vọng',
-    type: 'video',
-    category: 'Bài giảng',
+    title: 'Đang tải...',
+    type: 'Đang tải...',
+    category: 'Đang tải...',
     image: 'anhh.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    speaker: 'Mục sư Lê Minh',
-    date: '10/06/2026',
+    videoUrl: 'Đang tải...',
+    speaker: 'Đang tải...',
+    date: 'Đang tải...',
   },
   {
     id: 'm3',
     title: 'Sinh hoạt Ban thanh niên mùa hè',
     type: 'image',
-    category: 'Sinh hoạt Ban Thanh niên',
-    image: 'anh.jpg',
+    category: 'Sinh hoạt Thanh niên', // Đã sửa chữ 'Thanh niên' viết thường chữ T
+    image: 'kinhthanhhe.jpg',
+    driveUrl:'https://drive.google.com/drive/folders/1KcxJApXK6dao_F9L_VrKUKZ0Kgs1BGFA',
     date: '24-25/07/2026',
   },
   {
@@ -162,8 +161,8 @@ export const mediaItems: MediaItem[] = [
     title: 'Trại Xuân Video 2026',
     type: 'video',
     category: 'Nhóm lễ',
-    image: '/nhatho.jpg', // Ảnh nền hiển thị trước khi bấm phát video
-    videoUrl: 'https://drive.google.com/file/d/1q9xDHHgvERSkJtj0w8RSc34pAm2GZmwC/preview', // Link nhúng Google Drive
+    image: 'nhatho.jpg',
+    videoUrl: 'https://drive.google.com/file/d/1q9xDHHgvERSkJtj0w8RSc34pAm2GZmwC/preview',
     speaker: 'Chi Hội Plei Bui',
     date: '12-13/02/2026',
   },

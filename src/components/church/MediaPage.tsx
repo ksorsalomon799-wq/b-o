@@ -1,14 +1,12 @@
 import { useState } from 'react';
-import * as Dialog from '@radix-ui/react-dialog';
 import * as Tabs from '@radix-ui/react-tabs';
-import { ImageIcon, PlayCircle, X } from 'lucide-react';
+import { ImageIcon, PlayCircle } from 'lucide-react';
 import { mediaItems } from '../../data/churchData';
 
 const categories = ['Tất cả', 'Ảnh', 'Video'] as const;
 
 export function MediaPage() {
   const [activeTab, setActiveTab] = useState('Tất cả');
-  const [selectedMedia, setSelectedMedia] = useState<(typeof mediaItems)[number] | null>(null);
 
   const filtered = mediaItems.filter((item) => {
     if (activeTab === 'Tất cả') return true;
@@ -48,34 +46,20 @@ export function MediaPage() {
               </div>
               <h3 className="mt-2 font-serif text-lg font-semibold text-slate-900">{item.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{item.date}</p>
-              <button onClick={() => setSelectedMedia(item)} className="mt-4 text-sm font-semibold text-red-800">
+              
+              {/* Nút bấm chuyển hướng sang Google Drive */}
+              <a 
+                href={item.driveUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="mt-4 inline-block text-sm font-semibold text-red-800 hover:underline"
+              >
                 Xem {item.type === 'video' ? 'video' : 'ảnh'}
-              </button>
+              </a>
             </div>
           </div>
         ))}
       </div>
-
-      <Dialog.Root open={Boolean(selectedMedia)} onOpenChange={() => setSelectedMedia(null)}>
-        <Dialog.Portal>
-          <Dialog.Overlay className="fixed inset-0 z-50 bg-slate-950/80" />
-          <Dialog.Content className="fixed left-1/2 top-1/2 z-[60] w-[92vw] max-w-3xl -translate-x-1/2 -translate-y-1/2 rounded-[24px] bg-white p-4 shadow-xl">
-            <div className="flex items-center justify-between">
-              <Dialog.Title className="font-serif text-xl font-semibold text-slate-900">{selectedMedia?.title}</Dialog.Title>
-              <Dialog.Close className="rounded-full p-2 text-slate-600">
-                <X size={18} />
-              </Dialog.Close>
-            </div>
-            {selectedMedia?.type === 'video' ? (
-              <div className="mt-4 overflow-hidden rounded-[20px]">
-                <iframe className="h-[320px] w-full" src={selectedMedia.videoUrl} title={selectedMedia.title} allowFullScreen />
-              </div>
-            ) : (
-              <img src={selectedMedia?.image} alt={selectedMedia?.title} className="mt-4 h-[360px] w-full rounded-[20px] object-cover" />
-            )}
-          </Dialog.Content>
-        </Dialog.Portal>
-      </Dialog.Root>
     </main>
   );
 }
