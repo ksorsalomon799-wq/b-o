@@ -53,8 +53,8 @@ export const scheduleItems: ScheduleItem[] = [
 export const articles: Article[] = [
   {
     id: '1',
-    title: 'Thánh Kinh hè ban thanh niên 2026',
-    excerpt: 'ngày 3/8 đến 14/8.',
+    title: 'Thánh Kinh hè ban thanh niên 2026.',
+    excerpt: 'Nước Cha Được Đến.',
     content: [
       'sẽ học trong tuần tới',
     ],
