@@ -56,11 +56,11 @@ export const articles: Article[] = [
     title: 'Thánh Kinh hè ban thanh niên 2026.',
     excerpt: 'Nước Cha Được Đến.',
     content: [
-      'sẽ học trong tuần tới',
+      '',
     ],
     category: 'Thông báo',
     author: '',
-    date: '3-14/08/2026',
+    date: '24-25/07/2026',
     image: 'thophuong.jpg',
     verse: '“Đừng lo lắng chi cho đời sống...” – Ma-thi-ơ 6:25',
     tags: ['Cầu nguyện', 'Cộng đồng'],
