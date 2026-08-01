@@ -27,7 +27,7 @@ export function Header() {
             {/* Gọi điện dùng thẻ <a> truyền thống */}
             <a href="tel:+84912345678" className="flex items-center gap-2 hover:text-white">
               <Phone size={15} />
-              +84 912 345 678
+              sẽ cập nhật sau...
             </a>
             {/* Chuyển tới id anchor hoặc link dùng thẻ <a> */}
             <a href="#contact" className="flex items-center gap-2 hover:text-white">

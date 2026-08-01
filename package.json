@@ -1,11 +1,12 @@
 {
-  "name": "bao",
+  "name": "Hội Thánh Tin lành Chi Hội Plei Bui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+ "homepage": "https://ksorsalomon799-wq.github.io/b-o",
   "scripts": {
     "dev": "vite",
-    "build": " vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",

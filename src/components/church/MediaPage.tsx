@@ -48,13 +48,15 @@ export function MediaPage() {
               <p className="mt-2 text-sm text-slate-600">{item.date}</p>
               
               {/* Nút bấm chuyển hướng sang Google Drive */}
-              <a 
-                href={item.driveUrl} 
+               <a
+    
+                href={item.type === 'video' ? (item.videoUrl || '#') : (item.driveUrl || '#')} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="mt-4 inline-block text-sm font-semibold text-red-800 hover:underline"
               >
                 Xem {item.type === 'video' ? 'video' : 'ảnh'}
+              
               </a>
             </div>
           </div>

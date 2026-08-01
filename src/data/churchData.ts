@@ -53,7 +53,7 @@ export const scheduleItems: ScheduleItem[] = [
 export const articles: Article[] = [
   {
     id: '1',
-    title: 'Thông báo chuẩn bị học lớp thánh kinh căn bản tại plei breng,Năm thứ 2',
+    title: 'Thánh Kinh hè ban thanh niên 2026',
     excerpt: 'ngày 3/8 đến 14/8.',
     content: [
       'sẽ học trong tuần tới',
@@ -83,12 +83,12 @@ export const articles: Article[] = [
     title: 'Đang tải...',
     excerpt: 'Đang tải...',
     content: ['Đang tải...'],
-    category: 'Bài giảng', // Đã sửa từ 'Đang tải...' thành 'Bài giảng'
+    category: 'Đang tải...', // Đã sửa từ 'Đang tải...' thành 'Bài giảng'
     author: 'Đang tải...',
     date: 'Đang tải...',
     image: 'banhat.jpg',
     verse: 'Đang tải...',
-    tags: ['Đang tải...', 'Đang tải...'],
+    tags: ['Đang tải...'],
   },
 ];
 
@@ -148,21 +148,21 @@ export const mediaItems: MediaItem[] = [
     date: 'Đang tải...',
   },
   {
-    id: 'm3',
+   id: 'm3',
     title: 'Sinh hoạt Ban thanh niên mùa hè',
     type: 'image',
-    category: 'Sinh hoạt Thanh niên', // Đã sửa chữ 'Thanh niên' viết thường chữ T
+    category: 'Sinh hoạt Thanh niên',
     image: 'kinhthanhhe.jpg',
-    driveUrl:'https://drive.google.com/drive/folders/1KcxJApXK6dao_F9L_VrKUKZ0Kgs1BGFA',
+    driveUrl: 'https://drive.google.com/drive/folders/1KcxJApXK6dao_F9L_VrKUKZ0Kgs1BGFA', // Mục này đã có sẵn
     date: '24-25/07/2026',
   },
   {
-    id: 'm4',
+   id: 'm4',
     title: 'Trại Xuân Video 2026',
     type: 'video',
     category: 'Nhóm lễ',
     image: 'nhatho.jpg',
-    videoUrl: 'https://drive.google.com/file/d/1q9xDHHgvERSkJtj0w8RSc34pAm2GZmwC/preview',
+    videoUrl: 'https://drive.google.com/file/d/1q9xDHHgvERSkJtj0w8RSc34pAm2GZmwC/view?usp=sharing',
     speaker: 'Chi Hội Plei Bui',
     date: '12-13/02/2026',
   },
